@@ -155,7 +155,6 @@
                                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                         <state key="normal" title="Convert"/>
                                                         <connections>
-                                                            <action selector="convertLbtoG:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Pe-tC-ari"/>
                                                             <action selector="convertOzToMl:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ThM-P6-hVC"/>
                                                         </connections>
                                                     </button>
@@ -214,6 +213,7 @@
                                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                         <state key="normal" title="Convert"/>
                                                         <connections>
+                                                            <action selector="convertGtoLB:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yJl-ca-bvv"/>
                                                             <action selector="convertOzToMl:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wuE-vS-kEi"/>
                                                         </connections>
                                                     </button>
@@ -267,6 +267,8 @@
                     </view>
                     <connections>
                         <outlet property="gResultLabel" destination="VKN-ec-6v2" id="2am-1d-TSn"/>
+                        <outlet property="gTextField" destination="R8n-Lz-1Rp" id="Wao-09-30z"/>
+                        <outlet property="lbResultLabel" destination="2iU-qV-DHY" id="b2J-sp-wEi"/>
                         <outlet property="lbTextField" destination="pZh-wT-gom" id="z04-VP-JiW"/>
                         <outlet property="mlResultLabel" destination="eiy-6g-Q7g" id="rvT-My-lEb"/>
                         <outlet property="mlTextField" destination="R2w-0n-YKz" id="Ieb-Zk-5wc"/>

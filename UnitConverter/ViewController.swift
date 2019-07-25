@@ -69,5 +69,22 @@ class ViewController: UIViewController {
         }
     }
     
+    // MARK: g to lb converter
+    @IBOutlet weak var gTextField: UITextField!
+    @IBOutlet weak var lbResultLabel: UILabel!
+    
+    @IBAction func convertGtoLB(_ sender: Any) {
+        let oneGram:Float = 0.00220462 //lb
+        if gTextField.text != nil {
+            if let gram:Float = Float(gTextField.text!) {
+                let lb = gram*oneGram
+                lbResultLabel.text = String(lb)
+            } else {
+                lbResultLabel.text = "NA"
+            }
+        } else {
+            lbResultLabel.text = "NA"
+        }
+    }
 }
 
