@@ -14,6 +14,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var ozTextField: UITextField!
     @IBOutlet weak var mlResultLabel: UILabel!
     
+    @IBOutlet weak var mlTextField: UITextField!
+    @IBOutlet weak var ozResultLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -28,6 +31,20 @@ class ViewController: UIViewController {
                 mlResultLabel.text = String(ml)
             } else {
                 mlResultLabel.text = "NA"
+            }
+        } else {
+            mlResultLabel.text = "NA"
+        }
+    }
+    
+    @IBAction func convertMltoOz(_ sender: Any) {
+        let oneMl:Float = 0.033814 //oz
+        if mlTextField.text != nil {
+            if let ml:Float = Float(mlTextField.text!) {
+                let oz = ml*oneMl
+                ozResultLabel.text = String(oz)
+            } else {
+                ozResultLabel.text = "NA"
             }
         } else {
             mlResultLabel.text = "NA"

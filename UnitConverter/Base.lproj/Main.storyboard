@@ -96,6 +96,7 @@
                                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                         <state key="normal" title="Convert"/>
                                                         <connections>
+                                                            <action selector="convertMltoOz:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pse-bB-OoI"/>
                                                             <action selector="convertOzToMl:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KKj-Mc-h0R"/>
                                                         </connections>
                                                     </button>
@@ -265,6 +266,8 @@
                     </view>
                     <connections>
                         <outlet property="mlResultLabel" destination="eiy-6g-Q7g" id="rvT-My-lEb"/>
+                        <outlet property="mlTextField" destination="R2w-0n-YKz" id="Ieb-Zk-5wc"/>
+                        <outlet property="ozResultLabel" destination="Sjk-oM-Ycw" id="PuY-H5-CAi"/>
                         <outlet property="ozTextField" destination="XHp-ff-aBC" id="dqF-EG-WNp"/>
                     </connections>
                 </viewController>
