@@ -155,6 +155,7 @@
                                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                         <state key="normal" title="Convert"/>
                                                         <connections>
+                                                            <action selector="convertLbtoG:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Pe-tC-ari"/>
                                                             <action selector="convertOzToMl:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ThM-P6-hVC"/>
                                                         </connections>
                                                     </button>
@@ -265,6 +266,8 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="gResultLabel" destination="VKN-ec-6v2" id="2am-1d-TSn"/>
+                        <outlet property="lbTextField" destination="pZh-wT-gom" id="z04-VP-JiW"/>
                         <outlet property="mlResultLabel" destination="eiy-6g-Q7g" id="rvT-My-lEb"/>
                         <outlet property="mlTextField" destination="R2w-0n-YKz" id="Ieb-Zk-5wc"/>
                         <outlet property="ozResultLabel" destination="Sjk-oM-Ycw" id="PuY-H5-CAi"/>

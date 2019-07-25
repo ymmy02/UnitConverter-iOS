@@ -17,6 +17,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var mlTextField: UITextField!
     @IBOutlet weak var ozResultLabel: UILabel!
     
+    @IBOutlet weak var lbTextField: UITextField!
+    @IBOutlet weak var gResultLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -48,6 +51,20 @@ class ViewController: UIViewController {
             }
         } else {
             mlResultLabel.text = "NA"
+        }
+    }
+    
+    @IBAction func convertLbtoG(_ sender: Any) {
+        let oneLb:Float = 453.592 //g
+        if lbTextField.text != nil {
+            if let lb:Float = Float(lbTextField.text!) {
+                let gram = lb*oneLb
+                gResultLabel.text = String(gram)
+            } else {
+                gResultLabel.text = "NA"
+            }
+        } else {
+            gResultLabel.text = "NA"
         }
     }
     
