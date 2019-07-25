@@ -10,22 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    // MARK: Properties
-    @IBOutlet weak var ozTextField: UITextField!
-    @IBOutlet weak var mlResultLabel: UILabel!
-    
-    @IBOutlet weak var mlTextField: UITextField!
-    @IBOutlet weak var ozResultLabel: UILabel!
-    
-    @IBOutlet weak var lbTextField: UITextField!
-    @IBOutlet weak var gResultLabel: UILabel!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
-    // MARK: Actions
+    // MARK: oz to ml converter
+    @IBOutlet weak var ozTextField: UITextField!
+    @IBOutlet weak var mlResultLabel: UILabel!
+    
     @IBAction func convertOzToMl(_ sender: Any) {
         let oneOz:Float = 29.5735 //ml
         if ozTextField.text != nil {
@@ -40,6 +33,10 @@ class ViewController: UIViewController {
         }
     }
     
+    // MARK: ml to oz converter
+    @IBOutlet weak var mlTextField: UITextField!
+    @IBOutlet weak var ozResultLabel: UILabel!
+    
     @IBAction func convertMltoOz(_ sender: Any) {
         let oneMl:Float = 0.033814 //oz
         if mlTextField.text != nil {
@@ -53,6 +50,10 @@ class ViewController: UIViewController {
             mlResultLabel.text = "NA"
         }
     }
+    
+    // MARK: lb to g converter
+    @IBOutlet weak var lbTextField: UITextField!
+    @IBOutlet weak var gResultLabel: UILabel!
     
     @IBAction func convertLbtoG(_ sender: Any) {
         let oneLb:Float = 453.592 //g
